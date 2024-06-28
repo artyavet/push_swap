@@ -6,7 +6,7 @@
 /*   By: artyavet <artyavet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 17:45:44 by artyavet          #+#    #+#             */
-/*   Updated: 2024/06/26 22:53:55 by artyavet         ###   ########.fr       */
+/*   Updated: 2024/06/28 21:15:41 by artyavet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,8 @@ int	main(int argc, char **argv)
 	t_list	*stack_b;
 	int		count_nodes;
 
+	if (argc == 1)
+		exit(1 && write(2, "Error\n", 6));
 	count_nodes = 0;
 	stack_a = NULL;
 	stack_b = NULL;
